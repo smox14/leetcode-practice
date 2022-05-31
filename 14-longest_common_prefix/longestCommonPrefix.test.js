@@ -1,3 +1,4 @@
+const longestCommonPrefix = require('./longestCommonPrefix')
 
 describe('longestCommonPrefix', () => {
   it('returns the common prefix among the input strings', () => {
