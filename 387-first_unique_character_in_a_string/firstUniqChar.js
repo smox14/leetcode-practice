@@ -3,13 +3,17 @@
 // 2. check the character if appear somewhere else 
 
 
+
 function firstUniqChar(s) {
   for( let i = 0; i < s.length; i++){
-    if(!s.replace(s[i],'').includes(s[i])) {
+    // if(!s.replace(s[i],'').includes(s[i])) {
+      if(s.indexOf(s[i]) == s.lastIndexOf(s[i])){
       return i
     }
   }
   return -1
 }
+
+
 
 module.exports = firstUniqChar
