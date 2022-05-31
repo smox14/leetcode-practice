@@ -22,10 +22,8 @@ function firstUniqCharHashMap(s) {
    (charMap.has(s[i]))? charMap.set(s[i], 2) : charMap.set(s[i],1)
  }
  
- let letters = Array.from(charMap.keys())
- 
- for(let i =0; i < letters.length; i++) {
-  if(charMap.get(letters[i]) === 1) return i
+ for(let i =0; i < s.length; i++) {
+  if(charMap.get(s[i]) === 1) return i
 }
   return -1
 }
