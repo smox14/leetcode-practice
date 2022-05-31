@@ -6,6 +6,7 @@
 // 3. return the longest prefix
 
 function longestCommonPrefix(strs) {
+  if(!strs.length) return ""
   let prefix = ''
   // const minLength = strs.reduce((a,b) => a.length < b.length? a : b).length   
   // or 
