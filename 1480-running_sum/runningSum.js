@@ -1,5 +1,4 @@
-
-
+//  best and easy solution
 function runningSum(nums) {
   let outputArray = [];
   let temp = 0;
@@ -10,18 +9,20 @@ function runningSum(nums) {
   return outputArray;
 };
 
-// use map 
-
+// use map function
 function runningSum1(nums) {
   let temp = 0;
-  return nums.map((number) => temp += number);
+  return nums.map ((number) => temp += number);
 }
 
-// use reduce 
+
+// use reduce function
 function runningSum2(nums) {
-  let temp = 0;
-  return nums.map((number) => temp += number);
+  
+  return nums.reduce(( arrayOfSum, value, index ) =>  
+    [...arrayOfSum, value + (arrayOfSum[index - 1] || 0) ]
+  , []);
 }
 
 
-module.exports = runningSum2
+module.exports = runningSum1
