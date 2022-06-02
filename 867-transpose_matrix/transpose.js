@@ -1,6 +1,13 @@
 const transpose = function(matrix) {
-  return [[1,4,7],[2,5,8],[3,6,9]]
+  let transposeMatrix = [];
 
-}
+  for(let i=0; i < matrix.length; i++) {
+    for(let j=0; j< matrix[i].length; j++){
+      if(!transposeMatrix[j]) transposeMatrix[j] = [] 
+      transposeMatrix[j].push(matrix[i][j])
+    };
+  };
+  return transposeMatrix
+};
 
-module.exports = transpose
+module.exports = transpose;
