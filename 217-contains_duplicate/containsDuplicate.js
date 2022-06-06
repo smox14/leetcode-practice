@@ -11,4 +11,11 @@ const containsDuplicate = input => {
   return false
 };
 
+// another solution 
+
+// const containsDuplicate = input => {
+//   return new Set(input).size < input.length
+// };
+
+
 module.exports = containsDuplicate;
