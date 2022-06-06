@@ -13,7 +13,6 @@ const average = function(salary) {
   .reduce( (total, value) => total + value)
   / salary.length
   
-  
 }
 
 module.exports = average

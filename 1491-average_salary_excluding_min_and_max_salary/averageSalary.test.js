@@ -9,4 +9,13 @@ describe('1491 - Average salary', () => {
 
     expect(actualResult).toBe(expectResult)
   });
+
+  it('Should return the average salary excluding minimum and maximum salary', () => {
+    const salary = [1000,2000,3000]
+    const expectResult = 2000.00000
+
+    const actualResult = average(salary)
+
+    expect(actualResult).toBe(expectResult)
+  });
 });
