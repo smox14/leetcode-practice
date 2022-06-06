@@ -11,7 +11,7 @@ const containsDuplicate = input => {
   return false
 };
 
-// another solution 
+// another solution >> faster solution
 
 // const containsDuplicate = input => {
 //   return new Set(input).size < input.length
